@@ -369,16 +369,20 @@
 <!-- ─── NAV ─── -->
 <nav>
   <a class="nav-logo" href="#">
-    <!-- Omkara K-Icon SVG -->
-    <svg class="k-icon" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
-      <!-- Orange dot (head) -->
-      <circle cx="112" cy="34" r="27" fill="#F04E23"/>
-      <!-- Left vertical bar -->
-      <rect x="30" y="70" width="24" height="162" rx="2" fill="#1C0800"/>
-      <!-- Upper diagonal arm -->
-      <path d="M54 106 L164 65 L164 97 L54 138 Z" fill="#1C0800"/>
-      <!-- Lower curved arm: quarter-circle arc, center at (54,232) -->
-      <path d="M54 154 A78 78 0 0 1 132 232 L112 232 A58 58 0 0 0 54 174 Z" fill="#1C0800"/>
+    <!-- Omkara K-Icon SVG — redrawn from logo -->
+    <svg class="k-icon" viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg">
+      <!-- Orange dot: sits just above the K body -->
+      <circle cx="185" cy="62" r="52" fill="#F04E23"/>
+      <!-- Left vertical bar: full height of K -->
+      <rect x="48" y="128" width="42" height="244" rx="2" fill="#1C0800"/>
+      <!-- Upper arm: starts at bar-top, goes diagonal to upper-right.
+           Bottom edge is a concave arc (Q bezier bowing upward) -->
+      <path d="M 90 128 L 284 150 L 284 228 Q 190 175 90 248 Z" fill="#1C0800"/>
+      <!-- Gap: y=248 to y=264 (background shows through — creates K split) -->
+      <!-- Lower arm: quarter-circle ring.
+           Center at (90, 372) = bar-right × bar-bottom.
+           Outer r=108, inner r=66 (same weight as bar width) -->
+      <path d="M 90 264 A 108 108 0 0 1 198 372 L 156 372 A 66 66 0 0 0 90 306 Z" fill="#1C0800"/>
     </svg>
     <div class="nav-wordmark">
       <span class="om">om<em>k</em>ara</span>
@@ -436,11 +440,11 @@
 <!-- ─── FOOTER ─── -->
 <footer>
   <div class="footer-left">
-    <svg width="22" height="27" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="112" cy="34" r="27" fill="#F04E23"/>
-      <rect x="30" y="70" width="24" height="162" rx="2" fill="#1C0800"/>
-      <path d="M54 106 L164 65 L164 97 L54 138 Z" fill="#1C0800"/>
-      <path d="M54 154 A78 78 0 0 1 132 232 L112 232 A58 58 0 0 0 54 174 Z" fill="#1C0800"/>
+    <svg width="22" height="28" viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="185" cy="62" r="52" fill="#F04E23"/>
+      <rect x="48" y="128" width="42" height="244" rx="2" fill="#1C0800"/>
+      <path d="M 90 128 L 284 150 L 284 228 Q 190 175 90 248 Z" fill="#1C0800"/>
+      <path d="M 90 264 A 108 108 0 0 1 198 372 L 156 372 A 66 66 0 0 0 90 306 Z" fill="#1C0800"/>
     </svg>
     <span class="footer-text">
       <strong style="color:var(--brown)">oterminal.in</strong>
